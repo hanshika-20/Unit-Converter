@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentBottom="false"
+    android:background="@color/app_background"
+    android:foregroundTint="#F3F3F3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="40dp"
+        android:text="UNIT CONVERTER"
+        android:textAlignment="center"
+        android:textColor="@color/app_text"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="179dp"
+        android:layout_height="73dp"
+        app:tint="#9AA8B1"
+        app:srcCompat="@drawable/icon" />
+
+    <Button
+        android:id="@+id/btnLength"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/button"
+        android:text="LENGTH"
+        android:textAlignment="center"
+        android:textColor="@color/button_text"
+        app:layout_constraintBottom_toTopOf="@+id/btnWeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnWeight"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/button"
+        android:text="WEIGHT"
+        android:textAlignment="center"
+        android:textColor="@color/button_text"
+        app:layout_constraintBottom_toTopOf="@+id/btnTemperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTemperature"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/button"
+        android:text="TEMPERATURE"
+        android:textAlignment="center"
+        android:textColor="@color/button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

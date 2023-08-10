@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvInputLength"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".weightActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvHeadingWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Weight Conversion"
+            android:textAlignment="center"
+            android:textColor="@color/app_text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Enter a value"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#AEAEAE"
+            android:textSize="27dp"></EditText>
+
+        <Button
+            android:id="@+id/btnGTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/button"
+            android:text="Convert g to kg"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text"></Button>
+
+        <Button
+            android:id="@+id/btnKgTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/button"
+            android:text="Convert kg to g"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text"></Button>
+
+        <TextView
+            android:id="@+id/tvResWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="27dp"></TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
